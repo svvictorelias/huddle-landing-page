@@ -1,7 +1,10 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 body{
     width: 100%;
@@ -10,6 +13,14 @@ body{
     background-color: hsl(257, 40%, 49%);
     background-image: url('images/bg-desktop.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+}
+.main-text{
+    width: 500px;
 }
