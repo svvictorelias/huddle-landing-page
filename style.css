@@ -43,6 +43,27 @@ section > button{
     font-size: 1.2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.541);
 }
-i:hover{
-    color: blue;
+nav{
+    display: flex;
+    justify-content: right;
+}
+nav>a{
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+nav>a::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
