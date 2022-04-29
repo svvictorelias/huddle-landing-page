@@ -25,12 +25,18 @@ main{
 .main-img{
     margin-right: 1.5rem;
     margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-img>img{
+    width: 100%;
 }
 section{
     margin-top: 50px;
     margin-left: 1.5rem;
     margin-right: 10px;
-    max-width: 500px;
+    width: 500px;
 }
 section > p{
     margin: 30px 0px;
@@ -66,4 +72,7 @@ nav>a::before{
     bottom: 10px;
     border-radius: 50%;
     border: 2px solid white;
+}
+footer{
+    width: 100vw;
 }
