@@ -19,8 +19,10 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 main{
     display: flex;
+    justify-content: center;
 }
 .main-img{
     margin-right: 1.5rem;
@@ -30,12 +32,12 @@ main{
     justify-content: center;
 }
 .main-img>img{
-    width: 100%;
+    width: 90%;
 }
 section{
     margin-top: 50px;
     margin-left: 1.5rem;
-    margin-right: 10px;
+    margin-right: 0px;
     width: 500px;
 }
 section > p{
@@ -48,10 +50,17 @@ section > button{
     border: none;
     font-size: 1.2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.541);
+    cursor: pointer;
+}
+section > button:hover{
+    color: white;
+    background-color: hsl(300, 69%, 71%);
 }
 nav{
     display: flex;
     justify-content: right;
+    margin-top: 20px;
+    
 }
 nav>a{
     position: relative;
@@ -63,6 +72,7 @@ nav>a{
     font-size: 30px;
     text-decoration: none;
 }
+
 nav>a::before{
     content: '';
     position: absolute;
@@ -72,7 +82,4 @@ nav>a::before{
     bottom: 10px;
     border-radius: 50%;
     border: 2px solid white;
-}
-footer{
-    width: 100vw;
 }
