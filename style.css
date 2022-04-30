@@ -56,13 +56,17 @@ section > button:hover{
     color: white;
     background-color: hsl(300, 69%, 71%);
 }
-nav{
+ul{
     display: flex;
     justify-content: right;
-    margin-top: 20px;
-    
+    margin-top: 3rem;
 }
-nav>a{
+ul li{
+    position: relative;
+    list-style: none;
+    display: flex;
+}
+ul li a{
     position: relative;
     display: flex;
     width: 70px;
@@ -73,7 +77,7 @@ nav>a{
     text-decoration: none;
 }
 
-nav>a::before{
+ul li a::before{
     content: '';
     position: absolute;
     top: 10px;
@@ -82,4 +86,10 @@ nav>a::before{
     bottom: 10px;
     border-radius: 50%;
     border: 2px solid white;
+}
+a:hover i{
+    color: hsl(300, 69%, 71%);
+}
+ul li a:hover::before{
+    border: 2px solid hsl(300, 69%, 71%);
 }
