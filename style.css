@@ -19,7 +19,9 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+header>img{
+    width: 25%;
+}
 main{
     display: flex;
     justify-content: center;
@@ -59,7 +61,7 @@ section > button:hover{
 ul{
     display: flex;
     justify-content: right;
-    margin-top: 3rem;
+    
 }
 ul li{
     position: relative;
@@ -92,4 +94,33 @@ a:hover i{
 }
 ul li a:hover::before{
     border: 2px solid hsl(300, 69%, 71%);
+}
+@media only screen and (max-width: 750px){
+    header{
+        padding: 3rem 2rem;
+    }
+    header>img{
+        width: 40%;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-img>img{
+        width: 80%;
+    }
+    section{
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section h1, p{
+        width: 400px;
+        text-align: center;
+    }
+    ul{
+        justify-content: center;
+    }
 }
